@@ -1,0 +1,17 @@
+{
+    "name": "labas/cms",
+    "description": "This is an awesome project",
+    "authors": [
+        {
+            "name": "Jjurgita",
+            "email": "jurgitabalinaite@gmail.com"
+        }
+    ],
+    "require": {
+        "doctrine/orm": "^2.8"
+    },
+    "autoload": {
+        "files": ["src/models/Page.php"]
+    }
+
+}
