@@ -16,7 +16,7 @@ The third PHP sprint task is to create a CMS application with CRUD (create/read/
 ## Installation & Configuration
 
 1. Download ZIP with latest version from master branch or clone repository https
-2. Copy all the files to your website (XAMPP/AMPPS/other) folder. Please make sure that folder name is CMS
+2. Copy all the files to your website (XAMPP/AMPPS/other) folder. **Please make sure that the project folder name should be CMS**
 3. Install Composer locally (all necessary steps in https://getcomposer.org/download/), or globally (https://getcomposer.org/doc/00-intro.md#manual-installation)
 4. Install Doctrine into project adding `php composer.phar require doctrine/orm` in terminal. Please double check if your are in current project directory
 5. Update `bootstrap.php` file with your own MySQL connection parameters
