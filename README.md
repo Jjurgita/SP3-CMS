@@ -16,9 +16,9 @@ The third PHP sprint task is to create a CMS appllication with CRUD (create/read
 ## Installation & Configuration
 
 1. Download ZIP with latest version from master branch or clone repository https
-2. Copy all the files to your website (XAMPP/AMPPS/other) folder
+2. Copy all the files to your website (XAMPP/AMPPS/other) folder. Please make sure that folder name is CMS
 3. Install Composer locally (all necessary steps in https://getcomposer.org/download/), or globally (https://getcomposer.org/doc/00-intro.md#manual-installation)
-4. Install Doctrine into project adding `php composer.phar require doctrine/orm` in terminal. Please double check if your are in CMS directory
+4. Install Doctrine into project adding `php composer.phar require doctrine/orm` in terminal. Please double check if your are in current project directory
 5. Update `bootstrap.php` file with your own MySQL connection parameters
 
 ```
@@ -38,7 +38,7 @@ The third PHP sprint task is to create a CMS appllication with CRUD (create/read
     USE sprint3;
 ```
 
-7. Create a Page table in MySQL sprint3 database by running `vendor\bin\doctrine orm:schema-tool:update --force --dump-sql` if you use Windows CMD or `vendor/bin/doctrine orm:schema-tool:update --force --dump-sql` if you use Git Bash, Mac or Linux terminal. Please double check if your are in CMS directory
+7. Create a Page table in MySQL sprint3 database by running `vendor\bin\doctrine orm:schema-tool:update --force --dump-sql` if you use Windows CMD or `vendor/bin/doctrine orm:schema-tool:update --force --dump-sql` if you use Git Bash, Mac or Linux terminal. Please double check if your are in current project directory
 
 8. Execute the following SQL query to insert default data inside your MySQl database. For more SQL query info use `sprint3_page.sql` file
 
