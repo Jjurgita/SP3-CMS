@@ -2,7 +2,7 @@
 
 Sprint #3 - Content Management System
 
-The third PHP sprint task is to create a CMS appllication with CRUD (create/read/update/delete data from database) operations - use ORM, Composer, Entities and MVC. An admin is the one who is responsible for the content management part. After every operation content displays to end-users.
+The third PHP sprint task is to create a CMS application with CRUD (create/read/update/delete data from database) operations - use ORM, Composer, Entities and MVC. An admin is the one who is responsible for the content management part. After every operation content displays to end-users.
 
 ## Requirements
 
@@ -38,12 +38,13 @@ The third PHP sprint task is to create a CMS appllication with CRUD (create/read
     USE sprint3;
 ```
 
-7. Create a Page table in MySQL sprint3 database by running `vendor\bin\doctrine orm:schema-tool:update --force --dump-sql` if you use Windows CMD or `vendor/bin/doctrine orm:schema-tool:update --force --dump-sql` if you use Git Bash, Mac or Linux terminal. Please double check if your are in current project directory
+7. Create a Page table in MySQL sprint3 database by running `vendor\bin\doctrine orm:schema-tool:update --force --dump-sql` if you use Windows CMD or `vendor/bin/doctrine orm:schema-tool:update --force --dump-sql` if you use Git Bash, Mac or Linux terminal. Please double check if your are in current project directory. Note: SQL query to create page table is also documented in `sprint3_page.sql` file
 
 8. Execute the following SQL query to insert default data inside your MySQl database. For more SQL query info use `sprint3_page.sql` file
 
 ```
-    INSERT INTO page VALUES (1,'Home','Welcome to the Content Management System application - the third PHP course project.'),
+    INSERT INTO page VALUES
+        (1,'Home','Welcome to the Content Management System application - the third PHP course project.'),
         (2,'About','A content management system (CMS) is computer software used to manage the creation and modification of digital content.'),
         (3,'Services','Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'),
         (4,'News','Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. '),
@@ -61,7 +62,7 @@ The third PHP sprint task is to create a CMS appllication with CRUD (create/read
 
 <ul>
 <li> Navigate through pages</li>
-<li> See pages name and content</li>
+<li> See page name and content</li>
 </ul>
 
 ### Admin is able to:
@@ -69,7 +70,7 @@ The third PHP sprint task is to create a CMS appllication with CRUD (create/read
 <ul>
 <li> Login and Logout</li>
 <li> View Website: see everything as end-user</li>
-<li> Manage content: add/delete/update page data</li>
+<li> Manage Content: add/delete/update page data</li>
 </ul>
 
 <hr>
